@@ -1,0 +1,7 @@
+github.com/machinebox/sdk-go v0.3.1 h1:M44jbdC6u8HL7zkpUc9bRreCTTOXj80K9BqNFKnRDLM=
+github.com/machinebox/sdk-go v0.3.1/go.mod h1:tXtFYGH9Pq7knJe4mrZbxbEGm9kJgnQ2KLck4a1NEXo=
+github.com/matryer/is v1.2.0/go.mod h1:2fLPjFQM9rhQ15aVEtbuwhJinnOqrmgXPNdZsdwlWXA=
+github.com/matryer/way v0.0.0-20180416093233-9632d0c407b0 h1:KWiqy3hl8yCUPAq1frD0DKXKyn7d9h2nVhj2r5ISq2o=
+github.com/matryer/way v0.0.0-20180416093233-9632d0c407b0/go.mod h1:stiJZfMq1xZPqvIyt2VsYMgLul8vf1nmL0D3KU70dEc=
+github.com/pkg/errors v0.8.1 h1:iURUrRGxPUNPdy5/HRSm+Yj6okJ6UtLINN0Q9M4+h3I=
+github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=

@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <title>Web Face ID by Machine Box</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css'>
+  <link rel='stylesheet' href='/assets/app.css'>
+</head>
+
+<body>
+  <div class="ui modal">
+    <div class="header" id="modal-header">I don't know you... What's your name?</div>
+    <div class="content">
+      <form class="name-form">
+        <label for="">Name</label>
+        <input type="text" id="name" />
+        <input class="ui approve button" type="submit" />
+      </form>
+    </div>
+  </div>
+
+  <div class='options'>
+    <button id="teach" class="ui teal massive circular icon button" style='display:none'>
+      <i class='camera icon'></i>
+      Teach
+    </button>
+
+    <button id="send-tx" class="ui teal massive circular icon button">
+      <i class='bolt icon'></i>
+      Send transaction
+    </button>
+    <div class='ui info message' style='display:none'></div>
+  </div>
+
+  <video id="video" width="100%" muted autoplay></video>
+  <canvas id="canvas" width="400" height="225" style="display:none;"></canvas>
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'
+    integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+  <script src='/assets/arg.js'></script>
+  <script src='/assets/app.js'></script>
+</body>
+
+</html>
