@@ -10,7 +10,7 @@ ADD . .
 
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags="-w -s" -o blockchain-facial-recognizer-client ./client
 
-FROM alpine
+FROM scratch
 
 ENV BUILDER_DIR=/go/src/github.com/ilovelili/blockchain-facial-recognizer
 
