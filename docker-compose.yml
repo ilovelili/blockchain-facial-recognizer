@@ -6,3 +6,20 @@ services:
     ports:
       - "8545:8545"
     command: "ganache-cli -d -m witch collapse practice feed shame open despair creek road again ice least -l 20000000"
+
+  facebox:
+    restart: unless-stopped
+    image: machinebox/facebox:latest
+    ports:
+      - 8080:8080
+    environment:
+      - MB_KEY=NzFjZGJmNzUzYmNlYjMwOWFkYTNiNjhiMWFmNjBjOTQ.Lu0oQeEWNmTewONjlTHnrwyLkBA5E7BqH_bljeX--GbYdDuXFO0mLO9EzGWqJ0KzIltpeU9PnqxjzGwU2ii5QQ
+
+  client-api:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - 9000:9000
+    depends_on:
+      - facebox

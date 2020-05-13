@@ -11,7 +11,7 @@ $(function () {
 	let dataURL;
 
 	document.querySelector("#teach").style.display = "none";
-	var video = document.getElementById("video");
+
 	if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 		navigator.mediaDevices
 			.getUserMedia({
